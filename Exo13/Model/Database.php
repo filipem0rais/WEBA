@@ -6,9 +6,9 @@ class Database {
 
     public function __construct(bool $withErrors = false) {
         $this->db = new PDO("mysql:host=localhost;dbname=ex13;charset=UTF8", "root", "");
-
         if ($withErrors) {
             $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
         }
     }
 
@@ -22,7 +22,19 @@ class Database {
     public function getDetails($id){
         $stmt = $this->db->prepare("SELECT n.id, n.title, c.name as category, n.publishedAt, n.summary AS lead, n.content FROM news n, category c WHERE n.idxCategory = c.id AND n.id = :id");
         $stmt->execute(["id" => $id]);
-        return $stmt->fetchAll(PDO::FETCH_CLASS, "News")[0];
+        $result = $stmt->fetchAll(PDO::FETCH_CLASS, "News");
+        if (!empty($result)){
+            return $result[0];
+        }else {
+            return null;
+        }
+
+    }
+    public function getRandom(){
+        $stmt = $this->db->prepare("SELECT id FROM news");
+        $stmt->execute();
+        $result = $stmt->fetchAll(PDO::FETCH_COLUMN);
+        return $result[rand(0,count($result)-1)];
     }
 }
 ?>

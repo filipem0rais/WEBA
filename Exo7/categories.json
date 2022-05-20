@@ -1,0 +1,366 @@
+[
+	{
+      "Id": 4,
+      "Name": "Religiöse Einrichtung",
+      "Name_Fr": "Lieu de culte",
+      "Name_It": "Religiöse Einrichtung",
+      "Name_En": "Place of worship"
+    },
+    {
+      "Id": 5,
+      "Name": "Konzerthalle, Oper oder Theatersaal",
+      "Name_Fr": "Salle de concert, opéra, théâtre",
+      "Name_It": "Konzerthalle, Oper, Theatersaal",
+      "Name_En": "Concert hall, opera, theater"
+    },
+    {
+      "Id": 6,
+      "Name": "Kongresshalle",
+      "Name_Fr": "Salle de conférence",
+      "Name_It": "Kongresshalle",
+      "Name_En": "Conference room "
+    },
+    {
+      "Id": 7,
+      "Name": "Kino",
+      "Name_Fr": "Cinéma",
+      "Name_It": "Kino",
+      "Name_En": "Cinema"
+    },
+    {
+      "Id": 8,
+      "Name": "Restaurant, Café oder Bar",
+      "Name_Fr": "Restaurant, café ou bar",
+      "Name_It": "Ristorante, bar",
+      "Name_En": "Restaurant, Bar"
+    },
+    {
+      "Id": 9,
+      "Name": "Club",
+      "Name_Fr": "Boîte de nuit",
+      "Name_It": "Club",
+      "Name_En": "Night club"
+    },
+    {
+      "Id": 10,
+      "Name": "Parkplatz",
+      "Name_Fr": "Place de stationnement",
+      "Name_It": "Parkplatz",
+      "Name_En": "Parking spot"
+    },
+    {
+      "Id": 11,
+      "Name": "Rastplatz",
+      "Name_Fr": "Aire de repos",
+      "Name_It": "Rastplatz",
+      "Name_En": "Rest area"
+    },
+    {
+      "Id": 12,
+      "Name": "Flughafen",
+      "Name_Fr": "Aéroport",
+      "Name_It": "Flughafen",
+      "Name_En": "Airport"
+    },
+    {
+      "Id": 13,
+      "Name": "Parkhaus",
+      "Name_Fr": "Parking",
+      "Name_It": "Parkhaus",
+      "Name_En": "Parking garage"
+    },
+    {
+      "Id": 14,
+      "Name": "Bahnhof",
+      "Name_Fr": "Gare",
+      "Name_It": "Bahnhof",
+      "Name_En": "Train station"
+    },
+    {
+      "Id": 15,
+      "Name": "Tram- oder Bushaltestelle",
+      "Name_Fr": "Arrêt de tram ou de bus",
+      "Name_It": "Tram- oder Bushaltestelle",
+      "Name_En": "Tram or bus stop"
+    },
+    {
+      "Id": 16,
+      "Name": "Tankstelle",
+      "Name_Fr": "Station service",
+      "Name_It": "Tankstelle",
+      "Name_En": "Gas station"
+    },
+    {
+      "Id": 17,
+      "Name": "Campingplatz",
+      "Name_Fr": "Camping",
+      "Name_It": "Campingplatz",
+      "Name_En": "Camping"
+    },
+    {
+      "Id": 18,
+      "Name": "Hotel, Pension, Bed & Breakfast",
+      "Name_Fr": "Hôtel, pension, Bed & Breakfast",
+      "Name_It": "Hotel, Pension, Bed & Breakfast",
+      "Name_En": "Hotel, Pension, Bed & Breakfast"
+    },
+    {
+      "Id": 19,
+      "Name": "Gruppenunterkünfte",
+      "Name_Fr": "Logements pour groupes",
+      "Name_It": "Gruppenunterkünfte",
+      "Name_En": "Accommodation for groups"
+    },
+    {
+      "Id": 20,
+      "Name": "Ferienhaus oder Ferienwohnung",
+      "Name_Fr": "Maison, appartement de vacances",
+      "Name_It": "Ferienhaus, Ferienwohnung",
+      "Name_En": "Holiday home, apartment"
+    },
+    {
+      "Id": 21,
+      "Name": "Hütte",
+      "Name_Fr": "Cabane",
+      "Name_It": "Hütte",
+      "Name_En": "Hut"
+    },
+    {
+      "Id": 22,
+      "Name": "Museum oder Galerie",
+      "Name_Fr": "Musée, galerie",
+      "Name_It": "Museum, Galerie",
+      "Name_En": "Museum, gallery "
+    },
+    {
+      "Id": 23,
+      "Name": "Bibliothek",
+      "Name_Fr": "Bibliothèque",
+      "Name_It": "Bibliothek",
+      "Name_En": "Library"
+    },
+    {
+      "Id": 24,
+      "Name": "Tourismusinformationszentrum",
+      "Name_Fr": "Office du tourisme",
+      "Name_It": "Tourismusinformationszentrum",
+      "Name_En": "Tourist office"
+    },
+    {
+      "Id": 25,
+      "Name": "Einkaufszentrum",
+      "Name_Fr": "Centre commercial",
+      "Name_It": "Einkaufszentrum",
+      "Name_En": "Mall"
+    },
+    {
+      "Id": 26,
+      "Name": "Verwaltung oder Amt",
+      "Name_Fr": "Administration",
+      "Name_It": "Verwaltung oder Amt",
+      "Name_En": "Administration"
+    },
+    {
+      "Id": 27,
+      "Name": "Post",
+      "Name_Fr": "Poste",
+      "Name_It": "Post",
+      "Name_En": "Post office"
+    },
+    {
+      "Id": 28,
+      "Name": "Apotheke oder Drogerie",
+      "Name_Fr": "Pharmacie, droguerie",
+      "Name_It": "Apotheke, Drogerie",
+      "Name_En": "Pharmacy, drugstore "
+    },
+    {
+      "Id": 29,
+      "Name": "Autoverleih",
+      "Name_Fr": "Agence de location de voitures",
+      "Name_It": "Autoverleih",
+      "Name_En": "Car rental office"
+    },
+    {
+      "Id": 30,
+      "Name": "Geldautomat",
+      "Name_Fr": "Distributeur de billet",
+      "Name_It": "Geldautomat",
+      "Name_En": "Cash machine"
+    },
+    {
+      "Id": 31,
+      "Name": "Bank",
+      "Name_Fr": "Banque",
+      "Name_It": "Bank",
+      "Name_En": "Bank"
+    },
+    {
+      "Id": 32,
+      "Name": "Arzt- oder Zahnarztpraxis",
+      "Name_Fr": "Cabinet médical",
+      "Name_It": "Arzt- oder Zahnarztpraxis",
+      "Name_En": "Doctor"
+    },
+    {
+      "Id": 33,
+      "Name": "Geschäfte",
+      "Name_Fr": "Commerce",
+      "Name_It": "Geschäfte",
+      "Name_En": "Store"
+    },
+    {
+      "Id": 34,
+      "Name": "Spital oder Heim",
+      "Name_Fr": "Hôpital, home",
+      "Name_It": "Spital, Heim",
+      "Name_En": "Hospital"
+    },
+    {
+      "Id": 35,
+      "Name": "Recycling- Sammelstelle",
+      "Name_Fr": "Point de recyclage",
+      "Name_It": "Recycling- Sammelstelle",
+      "Name_En": "Recycling point"
+    },
+    {
+      "Id": 36,
+      "Name": "Schwimmbad",
+      "Name_Fr": "Piscine",
+      "Name_It": "Schwimmbad",
+      "Name_En": "Swimming pool"
+    },
+    {
+      "Id": 37,
+      "Name": "Zoo",
+      "Name_Fr": "Zoo",
+      "Name_It": "Zoo",
+      "Name_En": "Zoo"
+    },
+    {
+      "Id": 38,
+      "Name": "Botanischer Garten",
+      "Name_Fr": "Jardin botanique",
+      "Name_It": "Botanischer Garten",
+      "Name_En": "Botanical Garden"
+    },
+    {
+      "Id": 39,
+      "Name": "Eisstadion",
+      "Name_Fr": "Patinoire",
+      "Name_It": "Eisstadion",
+      "Name_En": "Rink"
+    },
+    {
+      "Id": 40,
+      "Name": "Sportstadion",
+      "Name_Fr": "Stade",
+      "Name_It": "Sportstadion",
+      "Name_En": "Stadium"
+    },
+    {
+      "Id": 41,
+      "Name": "Sporthalle",
+      "Name_Fr": "Halle de sport",
+      "Name_It": "Sporthalle",
+      "Name_En": "Sports hall"
+    },
+    {
+      "Id": 42,
+      "Name": "Park oder Friedhof",
+      "Name_Fr": "Parc, cimetière",
+      "Name_It": "Park oder Friedhof",
+      "Name_En": "Park, cemetery"
+    },
+    {
+      "Id": 43,
+      "Name": "Eurokey-Anlage",
+      "Name_Fr": "Installation Eurokey",
+      "Name_It": "Eurokey-Anlage",
+      "Name_En": "Eurokey installation"
+    },
+    {
+      "Id": 44,
+      "Name": "Öffentlicher Aufzug oder Hebebühne",
+      "Name_Fr": "Ascenseur, plateforme élévatrice publique",
+      "Name_It": "Öffentlicher Aufzug oder Hebebühne",
+      "Name_En": "Elevator, public lifting platform "
+    },
+    {
+      "Id": 45,
+      "Name": "Sehenswürdigkeit",
+      "Name_Fr": "Site touristique",
+      "Name_It": "Sehenswürdigkeit",
+      "Name_En": "Touristic site"
+    },
+    {
+      "Id": 46,
+      "Name": "Aussichtspunkt",
+      "Name_Fr": "Point de vue",
+      "Name_It": "Aussichtspunkt",
+      "Name_En": "Point of view"
+    },
+    {
+      "Id": 47,
+      "Name": "Telefonzelle",
+      "Name_Fr": "Cabine téléphonique",
+      "Name_It": "Telefonzelle",
+      "Name_En": "Telephone booth"
+    },
+    {
+      "Id": 48,
+      "Name": "Grund-, Mittel-, Berufs-, Fach- oder Hochschule",
+      "Name_Fr": "École ou haute école",
+      "Name_It": "Grund-, Mittel-, Berufs-, Fach- oder Hochschule",
+      "Name_En": "School, high school"
+    },
+    {
+      "Id": 49,
+      "Name": "Bergbahnen",
+      "Name_Fr": "Remontées mécaniques",
+      "Name_It": "Bergbahnen",
+      "Name_En": "Lifts"
+    },
+    {
+      "Id": 50,
+      "Name": "Öffentliche WC-Anlage",
+      "Name_Fr": "WC publics",
+      "Name_It": "Öffentliche WC-Anlage",
+      "Name_En": "Public WC "
+    },
+    {
+      "Id": 51,
+      "Name": "Kinderbetreuung ",
+      "Name_Fr": "Garderie ou crèche",
+      "Name_It": "Kinderbetreuung ",
+      "Name_En": "Nursery"
+    },
+    {
+      "Id": 52,
+      "Name": "Soziokulturelles Zentrum",
+      "Name_Fr": "Centre socio-culturel",
+      "Name_It": "Soziokulturelles Zentrum",
+      "Name_En": "Socio-cultural center "
+    },
+    {
+      "Id": 53,
+      "Name": "Schiff",
+      "Name_Fr": "Bateau",
+      "Name_It": "Nave",
+      "Name_En": "Boat"
+    },
+    {
+      "Id": 54,
+      "Name": "Landesteg",
+      "Name_Fr": "Débarcadère",
+      "Name_It": "Debarcadero",
+      "Name_En": "Landing stage"
+    },
+    {
+      "Id": 55,
+      "Name": "Spielplatz",
+      "Name_Fr": "Place de jeux",
+      "Name_It": "Parco Giochi",
+      "Name_En": "Playground"
+    }
+]

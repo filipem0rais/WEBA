@@ -1,0 +1,23 @@
+#hub {
+    font-size: 30px;
+}
+
+#hub span {
+    background-color: orange;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+.hub {
+    display: block;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+
+}
+
+.hub span:nth-child(2) {
+    background: #45daaf;
+    color: #000000;
+    border-radius: 1vw;
+    padding: 0 1vw 0 1vw;
+    display: inline-block;
+}
