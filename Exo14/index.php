@@ -26,13 +26,15 @@ try {
     else if ($action == 'about'){
         $viewLoaded = $controller->aboutAction();
     }
+    else if ($action == 'comment'){
+        $viewLoaded = $controller->addComment();
+    }
 
     if (!$viewLoaded){
         require_once('Views/404.php');
     }
 
 } catch (Exception $e){
-    die($e);
     require_once('Views/500.php');
 }
 

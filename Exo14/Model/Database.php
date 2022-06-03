@@ -1,5 +1,6 @@
 <?php
 include_once "News.php";
+include_once "Comment.php";
 class Database {
 
     private $db;
@@ -40,7 +41,12 @@ class Database {
     public function getComments($id){
         $stmt = $this->db->prepare("SELECT name, comment FROM comment WHERE comment.idxNews = :id");
         $stmt->execute(["id" => $id]);
-        return $stmt->fetchAll(PDO::FETCH_CLASS, "News");
+        return $stmt->fetchAll(PDO::FETCH_CLASS, "Comment");
+    }
+
+    public function addComment($idNews, $name, $comment){
+        $stmt = $this->db->prepare("INSERT INTO comment (name, comment, idxNews) VALUES (:name, :comment, :idx);");
+        $stmt->execute(["idx" => $idNews, "name"=>$name, "comment"=>$comment]);
     }
 }
 ?>

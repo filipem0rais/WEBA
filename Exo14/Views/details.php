@@ -28,6 +28,20 @@
         <?php
     }
     ?>
+    <form method="post" action="index.php?action=comment&id=<?= $new->id ?>">
+        <div class="form-group">
+            <label for="name">Nom</label>
+            <input name="name" type="text" class="form-control" id="name"
+                   placeholder="Nom">
+        </div>
+        <div class="form-group">
+            <label for="comment">Comment</label>
+            <input name="comment" type="text" class="form-control" id="comment" placeholder="Commentaire">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+    </form>
+
 
 </div>
 <?php

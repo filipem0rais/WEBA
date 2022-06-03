@@ -11,7 +11,6 @@ class Controller
             try {
                 $this->db = new Database();
             } catch (Exception $e) {
-                die();
                 include_once "Views/500.php";
                 return;
             }
@@ -42,23 +41,34 @@ class Controller
         return false;
     }
 
-    public function aboutAction(): bool {
+    public function aboutAction(): bool
+    {
         $title = "A propos";
         include_once "Views/about.php";
         return true;
     }
 
-    public function randomNewAction(): bool {
+    public function randomNewAction(): bool
+    {
         $this->loadDB();
         $id = $this->db->getRandom();
         $new = $this->db->getDetails($id);
+        $comments = $this->db->getComments($id);
 
-        if ($new != null){
+        if ($new != null) {
             $title = "Article aléatoire";
             include_once "Views/details.php";
             return true;
         }
         return false;
+    }
+
+    public function addComment()
+    {
+        $this->loadDB();
+        $this->db->addComment($_GET["id"], $_POST["name"], $_POST["comment"]);
+        return $this->newDetailAction();
+
     }
 }
 
