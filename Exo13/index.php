@@ -1,51 +1,38 @@
 <?php
 declare(strict_types=1);
 
-include_once "Model/Database.php";
-try {
-    $db = new Database();
-} catch (Exception $e) {
-    include_once "Views/500.php";
-    return;
+include_once "Controllers/Controller.php";
+
+$action = null;
+
+if (isset($_GET['action']) && !empty($_GET['action'])){
+    $action = $_GET['action'];
 }
 
+try {
+    $controller = new Controller();
 
-if (isset($_GET["action"]) && !empty($_GET["action"]) && $_GET["action"] == "details") {
-    if (isset($_GET["id"]) && !empty($_GET["id"]) && is_numeric($_GET["id"])) {
-        $id = $_GET["id"];
-        $new = $db->getDetails($id);
+    $viewLoaded = false;
 
-        if ($new == null) {
-            include_once "Views/404.php";
-        } else {
-            $title = $new->title;
-            include_once "Views/details.php";
-        }
-
-    } else {
-        include_once "Views/404.php";
+    if ($action == null){
+        $viewLoaded = $controller->listAction();
     }
-} else if (isset($_GET["action"]) && !empty($_GET["action"]) && $_GET["action"] == "random") {
-    $id = $db->getRandom();
-    $new = $db->getDetails($id);
-
-    if ($new == null) {
-        include_once "Views/404.php";
-    } else {
-        $title = "Article aléatoire";
-        include_once "Views/details.php";
+    else if ($action == 'details'){
+        $viewLoaded = $controller->newDetailAction();
     }
-} else if (isset($_GET["action"]) && !empty($_GET["action"]) && $_GET["action"] == "about") {
+    else if ($action == 'random'){
+        $viewLoaded = $controller->randomNewAction();
+    }
+    else if ($action == 'about'){
+        $viewLoaded = $controller->aboutAction();
+    }
 
-    $title = "A propos";
-    include_once "Views/about.php";
+    if (!$viewLoaded){
+        require_once('Views/404.php');
+    }
 
-} else if (!isset($_GET["action"])) {
-    $news = $db->getActualites();
-    $title = 'Accueil';
-    include_once "Views/list.php";
-} else {
-    include_once "Views/404.php";
+} catch (Exception $e){
+    require_once('Views/500.php');
 }
 
 
