@@ -32,6 +32,7 @@ try {
     }
 
 } catch (Exception $e){
+    die($e);
     require_once('Views/500.php');
 }
 

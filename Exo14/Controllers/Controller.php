@@ -11,6 +11,7 @@ class Controller
             try {
                 $this->db = new Database();
             } catch (Exception $e) {
+                die();
                 include_once "Views/500.php";
                 return;
             }
@@ -32,7 +33,7 @@ class Controller
             $id = $_GET["id"];
             $this->loadDB();
             $new = $this->db->getDetails($id);
-
+            $comments = $this->db->getComments($id);
             if ($new != null) {
                 include_once "Views/details.php";
                 return true;

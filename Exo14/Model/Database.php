@@ -5,7 +5,7 @@ class Database {
     private $db;
 
     public function __construct(bool $withErrors = false) {
-        $this->db = new PDO("mysql:host=localhost;dbname=ex13;charset=UTF8", "root", "");
+        $this->db = new PDO("mysql:host=localhost;dbname=ex14;charset=UTF8", "root", "");
         if ($withErrors) {
             $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
@@ -35,6 +35,12 @@ class Database {
         $stmt->execute();
         $result = $stmt->fetchAll(PDO::FETCH_COLUMN);
         return $result[rand(0,count($result)-1)];
+    }
+
+    public function getComments($id){
+        $stmt = $this->db->prepare("SELECT name, comment FROM comment WHERE comment.idxNews = :id");
+        $stmt->execute(["id" => $id]);
+        return $stmt->fetchAll(PDO::FETCH_CLASS, "News");
     }
 }
 ?>
